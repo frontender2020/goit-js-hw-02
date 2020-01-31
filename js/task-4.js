@@ -1,10 +1,8 @@
 const formatString = function(string) {
   const stringNew = string.split("");
 
-  for (let i = 0; i < stringNew.length; i += 1) {
-    if (stringNew.length <= 40) {
-      return string;
-    }
+  if (stringNew.length <= 40) {
+    return string;
   }
 
   const stringShort = string.slice(0, 40);

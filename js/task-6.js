@@ -16,9 +16,12 @@ while (true) {
   }
 
   numbers.push(input);
-
-  for (const number of numbers) {
-    total += number;
-  }
-  console.log(`Общая сумма чисел равна ${total}`);
 }
+
+for (const number of numbers) {
+  total += number;
+}
+
+numbers.length;
+
+console.log(`Общая сумма чисел равна ${total}`);
